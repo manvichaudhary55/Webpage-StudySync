@@ -317,6 +317,7 @@ body,html{
 }
 .test:hover{
     box-shadow: 8px 5px 5px rgb(158, 157, 157);
+g    border: 1px solid #6366F1;
 }
 .test h4{
     font-size: 15px;
@@ -324,8 +325,8 @@ body,html{
 }
 .test p{
     font-size: 12px;
-    font-weight: 600;
-    color: grey;
+    font-weight: 00;
+    color: rgb(151, 150, 150);
 }
 
 /* newsletter section */
@@ -398,23 +399,23 @@ body,html{
 
 }
 .top{
-    width: 90%;
+    width: 70%;
     /* background-color: rgb(227, 150, 150); */
     margin: auto;
     display: flex;
     border-bottom: 1px solid grey;
     padding-bottom: 1rem;
 }
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .top{
         flex-direction: column;
     }
     
-}
+} */
 .footer-left{
-    /* background: #44bfc3; */
-    width: 30%;
-    padding: 3rem;
+    background: #44bfc3;
+    width: 40%;
+    padding: 2rem;
 }
 .top-logo img{
     height: 20px;
@@ -439,12 +440,17 @@ body,html{
 }
 .top-right{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding-top: 3rem;
+    grid-template-columns: repeat(3,1fr);
     
+    background-color: #fcbf58;
+
+     
 }
 .footer-elem{
-    padding-left: 10rem;
+   
+    background-color: red;
+    width: 100%;
+    height: 100%;
 }
 .footer-elem h4{
     font-size: 15px;
