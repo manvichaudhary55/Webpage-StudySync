@@ -317,7 +317,7 @@ body,html{
 }
 .test:hover{
     box-shadow: 8px 5px 5px rgb(158, 157, 157);
-g    border: 1px solid #6366F1;
+    border: 1px solid #6366F1;
 }
 .test h4{
     font-size: 15px;
