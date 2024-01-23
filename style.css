@@ -406,16 +406,24 @@ body,html{
     border-bottom: 1px solid grey;
     padding-bottom: 1rem;
 }
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .top{
         flex-direction: column;
     }
     
-} */
+}
 .footer-left{
-    background: #44bfc3;
+    
     width: 40%;
     padding: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .footer-left{
+        width: 100%;
+        padding: 2rem;
+    } 
+    
 }
 .top-logo img{
     height: 20px;
@@ -440,25 +448,28 @@ body,html{
 }
 .top-right{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    
-    background-color: #fcbf58;
-
-     
-}
-.footer-elem{
-   
-    background-color: red;
+    grid-template-columns: repeat(3,1fr); 
+    /* background-color: #fcbf58; */
     width: 100%;
+}
+
+
+.footer-elem{
+    /* margin: auto; */
+    /* background-color: red; */
+    width:100%;
     height: 100%;
+    
 }
 .footer-elem h4{
     font-size: 15px;
+    margin: 5%;
 }
 .footer-elem p{
     font-size: 14px;
     color: grey;
     padding-top: 1rem;
+    margin: 10%;
 }
 .bottom{
     width: 100%;
