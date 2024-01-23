@@ -55,6 +55,11 @@ body,html{
     padding: 8px 10px;
     border-radius: 5px;
     color: white;
+    transition: 0.1s;
+}
+
+.contact-btn:hover{
+    background-color: #3f42f2;
 }
 
  @media  screen and (max-width:768px) {
@@ -124,6 +129,9 @@ body,html{
 #btn-start-now{
     background-color: #6366F1;
 }
+#btn-start-now:hover{
+    background-color: #3f42f2;
+}
 #btn-take-tour{
     background-color: rgb(62, 62, 62);
 }
@@ -162,6 +170,7 @@ body,html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10vw;
 }
 .company-grid{
     background-color: rgb(238, 238, 238);
@@ -194,6 +203,62 @@ body,html{
         display: flex;
     }
 }
+
+    /* MOVING TEXT SECTION */
+.page2{
+    
+    width: 100%;
+    /* background-color: rgb(223, 222, 222); */
+    
+   
+}
+@media screen and (max-width:768px) {
+    .page2{
+        display: none;
+    }
+}
+#moving-text{
+    /* background-color: #44bfc3; */
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#moving-text h1{
+    font-size: 5vw;
+    display: inline-block;
+    font-weight: 600;
+}
+.gola{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#3f42f2;
+    display: inline-block;
+    margin: 0.2vw 2vw;
+    text-align: center;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+ /* CARDS SECTION */
+
 .feature-cards{
     background-color:rgb(229, 229, 229);
     margin-top: 4rem;
@@ -202,11 +267,13 @@ body,html{
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-top: 10%;
 }
 .card-text{
     margin-top: 1rem;
 }
 .card-text p{
+    
     font-size: 15px;
     color: rgb(116, 115, 115);
     width: 70%;
@@ -276,6 +343,10 @@ body,html{
     height: 1rem;
     
 }
+
+/* .Testimonial-section */
+
+
 .Testimonial-section{
     text-align: center;
     display: flex;
@@ -324,6 +395,7 @@ body,html{
     color: #6366F1 ;
 }
 .test p{
+    padding-top: 2%;
     font-size: 12px;
     font-weight: 00;
     color: rgb(151, 150, 150);
